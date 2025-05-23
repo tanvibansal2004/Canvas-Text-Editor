@@ -11,6 +11,8 @@ const Toolbar = ({
   onItalicToggle,
   isUnderline,
   onUnderlineToggle,
+  textColor,
+  setTextColor,
   onAddText,
   onFormatUpdate
 }) => {
@@ -36,6 +38,12 @@ const Toolbar = ({
   const decreaseFontSize = () => {
     const newSize = Math.max(fontSize - 2, 8);
     onFontSizeChange(newSize);
+  };
+
+  const handleColorChange = (e) => {
+    const newColor = e.target.value;
+    setTextColor(newColor);
+    onFormatUpdate("fill", newColor);
   };
 
   return (
@@ -101,6 +109,17 @@ const Toolbar = ({
             >
               <Underline size={16} />
             </button>
+          </div>
+
+          {/* Color Picker */}
+          <div className="flex items-center space-x-2">
+              <input
+                type="color"
+                value={textColor}
+                onChange={handleColorChange}
+                className="w-8 h-8 rounded border border-gray-200 cursor-pointer"
+                title="Text Color"
+              />
           </div>
 
           {/* Add Text Button */}

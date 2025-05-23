@@ -183,6 +183,8 @@ export default function TextEditorApp() {
         onItalicToggle={handleItalicToggle}
         isUnderline={isUnderline}
         onUnderlineToggle={handleUnderlineToggle}
+        textColor={textColor}
+        setTextColor={setTextColor}
         onAddText={addText}
         onFormatUpdate={handleFormatUpdate}
       />
