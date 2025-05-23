@@ -1,8 +1,8 @@
-# Celebrare - Canvas Text Editor
+# Canvas Text Editor
 
 A modern, web-based text editor built with React and HTML5 Canvas that provides an intuitive interface for creating and editing text with rich formatting options. Perfect for creating designs, documents, and creative text layouts.
 
-![Canvas Text Editor Screenshot](./src/assets/screenshot.png)
+![Canvas Text Editor Screenshot](./src/assets/noScreenshot.jpg)
 
 ## ✨ Features
 
